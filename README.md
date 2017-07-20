@@ -1,6 +1,6 @@
 # docker-devpi
 
-[![Docker Hub](https://img.shields.io/badge/Docker%20Hub-betacloud%2Fdevpi-blue.svg)](https://hub.docker.com/r/betacloud/devpi/)
+[![Docker Hub](https://img.shields.io/badge/Docker%20Hub-osism%2Fdevpi-blue.svg)](https://hub.docker.com/r/osism/devpi/)
 
 License
 -------
@@ -18,7 +18,7 @@ limitations under the License.
 Author information
 ------------------
 
-This Docker image was created by [Betacloud Solutions GmbH](https://betacloud-solutions.de).
+This Docker image was created by [Betacloud Solutions GmbH](https://www.betacloud-solutions.de).
 
 Notices
 -------
