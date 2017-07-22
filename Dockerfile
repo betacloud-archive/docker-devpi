@@ -7,6 +7,9 @@ ENV VERSION ${VERSION:-4.3.0}
 ARG VERSION_CLIENT
 ENV VERSION_CLIENT ${VERSION_CLIENT:-3.0.0}
 
+ARG VERSION_WEB
+ENV VERSION_WEB ${VERSION_WEB:-3.2.0}
+
 ARG DEVPI_HOST
 ARG DEVPI_PASSWORD
 ARG DEVPI_PORT
@@ -23,6 +26,7 @@ RUN apt-get update \
     && apt-get upgrade -y \
     && pip install -q -U "devpi-server==$VERSION" \
     && pip install -q -U "devpi-client==$VERSION_CLIENT" \
+    && pip install -q -U "devpi-web==$VERSION_WEB" \
     && chmod +x /run.sh \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
