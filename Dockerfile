@@ -24,6 +24,7 @@ COPY files/run.sh /run.sh
 
 RUN apt-get update \
     && apt-get upgrade -y \
+    && echo "[global]\nindex-url = https://devpi-0.betacloud.io/root/pypi/+simple/\ntrusted-host = devpi-0.betacloud.io" > /etc/pip.conf \
     && pip install -q -U "devpi-server==$VERSION" \
     && pip install -q -U "devpi-client==$VERSION_CLIENT" \
     && pip install -q -U "devpi-web==$VERSION_WEB" \
