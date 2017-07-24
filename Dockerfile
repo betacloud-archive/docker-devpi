@@ -26,9 +26,9 @@ RUN apt-get update \
     && apt-get upgrade -y \
     && echo "[global]\nindex-url = https://devpi-0.betacloud.io/root/pypi/+simple/\ntrusted-host = devpi-0.betacloud.io" > /etc/pip.conf \
     && pip install --upgrade pip \
-    && pip install -q -U "devpi-server==$VERSION" \
-    && pip install -q -U "devpi-client==$VERSION_CLIENT" \
-    && pip install -q -U "devpi-web==$VERSION_WEB" \
+    && pip install devpi-server==$VERSION" \
+    && pip install devpi-client==$VERSION_CLIENT \
+    && pip install devpi-web==$VERSION_WEB \
     && chmod +x /run.sh \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
