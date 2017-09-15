@@ -1,6 +1,6 @@
 # docker-devpi
 
-[![Docker Hub](https://img.shields.io/badge/Docker%20Hub-osism%2Fdevpi-blue.svg)](https://hub.docker.com/r/osism/devpi/)
+[![Docker Hub](https://img.shields.io/badge/Docker%20Hub-betacloud%2Fdevpi-blue.svg)](https://hub.docker.com/r/betacloud/devpi/)
 
 License
 -------
